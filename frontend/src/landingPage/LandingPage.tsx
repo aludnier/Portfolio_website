@@ -1,10 +1,10 @@
-import { useState, type ReactNode } from "react"
+import { useState } from "react"
 import TabulationBar, { type TabContentProp } from "./TabulationBar"
 import "./Landing.css"
 import "../color.css"
 import CareerPath from "./tabulations/CareerPath"
 import ProjectsList from "./tabulations/ProjectLists"
-import Skills from "./tabulations/Skills"
+import Skills from "./tabulations/SkillsTabulation"
 
 
 function LandingPage() {
