@@ -18,7 +18,7 @@ body {
   padding: clamp(2rem, 6vw, 5rem) 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  /* gap: 2.5rem; */
 }
 
 .landing_title {
@@ -30,26 +30,24 @@ body {
 }
 
 .landing_subtitle {
-  margin: 0.75rem 0 0;
+  margin: 0 0 1.5rem;
   max-width: 60ch;
-  font-size: 1.125rem;
-  color: var(--color-text-muted);
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: var(--color-accent);
 }
 
 /* ---------- Onglets ---------- */
 .tabs_list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  padding-bottom: 1rem;
   border-bottom: 1px solid var(--color-border);
 }
 
 .tab-button {
   padding: 0.6rem 1.2rem;
   border: 1px solid var(--color-border);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 15px;
   background: var(--color-surface);
   color: var(--color-text);
   font: inherit;
@@ -87,6 +85,7 @@ body {
 .tabs_panel h2 { margin-top: 0; }
 .tabs_panel a { color: var(--color-accent); }
 .tabs_panel a:hover { color: var(--color-accent-hover); }
+
 
 /* ---------- Mobile ---------- */
 @media (max-width: 480px) {

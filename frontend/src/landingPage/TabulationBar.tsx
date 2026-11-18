@@ -1,19 +1,24 @@
+import type { ReactNode } from "react"
 
+export type TabContentProp = {
+    name : string,
+    content : ReactNode
+}
 
 type TabsProps = {
-    nbTabs : number
+    TabsContent : TabContentProp[]
     activeTab : number
     onTabChange : (tab : number) => void
 }
 
-function TabulationBar({ nbTabs, activeTab, onTabChange } : TabsProps ) {
+function TabulationBar({ TabsContent, activeTab, onTabChange } : TabsProps ) {
     let tabs = []
 
-    for (let index = 0; index < nbTabs; index++) {
+    for (let index = 0; index < TabsContent.length; index++) {
         tabs.push(
             <button key={index} className={`tab-button${activeTab === index ? " tab-button--active" : ""}`}
                 onClick={() => onTabChange(index)}>
-                Tabs {index + 1}
+                {TabsContent[index].name}
             </button>
         )
     }
