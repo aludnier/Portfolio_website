@@ -1,0 +1,24 @@
+/* ==========================================================
+   color.css — SEULE source de vérité pour les couleurs du site
+   Change une valeur ici, tout le site suit.
+   ========================================================== */
+
+:root {
+  /* Fonds */
+  --color-bg: #eef1f4;            /* fond de page */
+  --color-surface: #ffffff;       /* panneaux / cartes */
+
+  /* Textes */
+  --color-text: #14202b;          /* texte principal */
+  --color-text-muted: #5a6b7a;    /* texte secondaire */
+  --color-text-on-accent: #ffffff;/* texte posé sur la couleur d'accent */
+
+  /* Accent (onglet actif, focus, liens) */
+  --color-accent: #d16514;
+  --color-accent-hover: #de9218;
+  --color-accent-soft: #d49e75;   /* fond léger de l'accent */
+
+  /* Bordures & ombres */
+  --color-border: #d3dae1;
+  --color-shadow: rgba(20, 32, 43, 0.08);
+}
