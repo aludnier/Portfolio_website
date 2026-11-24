@@ -1,7 +1,7 @@
 import type { ReactNode } from "react"
 
 
-type CareerType = "School" | "Internship" | "Job"
+export type CareerType = "School" | "Internship" | "Job"
 
 export type CareerProps = {
     image : string | null,

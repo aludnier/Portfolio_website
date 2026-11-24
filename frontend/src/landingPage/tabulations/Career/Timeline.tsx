@@ -1,23 +1,10 @@
 import CareerCard, { makeCareerProp, type CareerProps } from "./CareerCard"
 
-const roadMap: CareerProps[] = [
-    makeCareerProp({
-        date: "September 2025",
-        image: "./assets/Epitech.png",
-        name: "Epitech Paris",
-        desc: "Expert in information technology",
-        link: "https://www.epitech.eu/ecole-informatique-paris/",
-        type: "School",
-    }),
-    makeCareerProp({
-        date: "January 2025",
-        name: "Internship",
-        desc: "Professional internship",
-        type: "Internship",
-    }),
-]
+type TimelineProps = {
+    roadMap : CareerProps[]
+}
 
-function CareerTimeline() {
+function CareerTimeline({ roadMap } : TimelineProps) {
     return (
         <div className="timeline">
             {roadMap.map((career, index) => (
