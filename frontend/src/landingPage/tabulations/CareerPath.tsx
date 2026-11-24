@@ -3,11 +3,15 @@ import "./Career/Career.css"
 import CareerTimeline from "./Career/Timeline"
 import { makeCareerProp, type CareerProps, type CareerType } from "./Career/CareerCard"
 
+import epitechLogo from "../../../assets/Epitech.png"
+import DeodisLogo from "../../../assets/Deodis.png"
+import ACRLogo from "../../../assets/ACR.png"
+import CSALogo from "../../../assets/CSA.webp"
 
 const roadMap: CareerProps[] = [
     makeCareerProp({
         date: "September 2024 - Present",
-        image: "./assets/Epitech.png",
+        image: epitechLogo,
         name: "Epitech Paris",
         desc: "Expert in information technology (Software Engineering, RNCP level 7), with project-based learning focused on autonomy and teamwork.",
         link: "https://www.epitech.eu/ecole-informatique-paris/",
@@ -15,7 +19,7 @@ const roadMap: CareerProps[] = [
     }),
     makeCareerProp({
         date: "August 2026",
-        image: "./assets/ACR.png",
+        image: ACRLogo,
         name: "ACR",
         title : "Temporary worker",
         desc: "receiving and checking pallets of parcels, and verifying that goods were compliant on arrival.",
@@ -23,7 +27,7 @@ const roadMap: CareerProps[] = [
     }),
     makeCareerProp({
         date: "September 2025 - December 2025",
-        image: "./assets/Deodis.png",
+        image: DeodisLogo,
         name: "Deodis",
         title: "ServiceNow developer / consultant",
         desc: "built service catalog features and automated notifications, and wrote an internal guide documenting the scripts.",
@@ -32,7 +36,7 @@ const roadMap: CareerProps[] = [
     }),
     makeCareerProp({
         date: "October 2025",
-        image: "./assets/CSA.webp",
+        image: CSALogo,
         name: "ServiceNow CSA",
         desc: "Certified System Administrator certification, earned during my internship at Deodis.",
         link : "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=208e1d77dbc27f40de3cdb85ca961987",
