@@ -42,10 +42,12 @@
 /* ---------- Timeline ---------- */
 
 .timeline {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 42rem;
+  max-width: 50rem;
   margin: 1rem auto;
-  gap: 0;
+  gap: 1em;
 }
 
 .timeline-row {
@@ -56,6 +58,7 @@
   align-items: center;
   min-height: 7rem;
   margin: 0;
+  /* border: solid 1px greenyellow; */
 }
 
 .timeline-header {
@@ -127,7 +130,7 @@
   position: absolute;
   left: calc(7.5rem + 1rem + 0.75rem - 1px);
   top: 50%;
-  bottom: -50%;
+  bottom: calc(-50% );
   width: 2px;
   background: var(--color-border);
   transform: none;

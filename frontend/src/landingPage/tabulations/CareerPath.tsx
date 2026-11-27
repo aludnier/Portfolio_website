@@ -10,7 +10,7 @@ import CSALogo from "../../../assets/CSA.webp"
 
 const roadMap: CareerProps[] = [
     makeCareerProp({
-        date: "September 2024 - Present",
+        date: "September 2024 - Now",
         image: epitechLogo,
         name: "Epitech Paris",
         desc: "Expert in information technology (Software Engineering, RNCP level 7), with project-based learning focused on autonomy and teamwork.",
